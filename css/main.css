@@ -9,9 +9,11 @@
   box-sizing: border-box;
 }
 
+/*=== ELEMENTOS BASE ===*/
 body {
-  background: var(--preta);
+  color: #fff;
   font-family: 'Times New Roman', Times, serif;
+  background: var(--preta);
 }
 
 header .container {
@@ -35,4 +37,59 @@ header nav a {
 
 header nav a:hover {
   color: #fff;
+}
+
+/*=== FILME PRINCIPAL ===*/
+.filme-principal {
+  height: 400px;
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url('../img/capa-sherlock.jpg');
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .descricao {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.filme-principal .titulo {
+  margin-top: 15%;
+  font-size: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
+}
+
+.botao {
+  margin-right: 15px;
+  padding: 15px 30px;
+  font-size: 12px;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  outline: none;
+}
+
+.botao:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 0.3s ease all;
+}
+
+.botao i {
+  margin-right: 8px;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+.filme-principal .container {
+  width: 70%;
 }
