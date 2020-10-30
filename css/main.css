@@ -12,8 +12,12 @@
 /*=== ELEMENTOS BASE ===*/
 body {
   color: #fff;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Arial', Times, serif;
   background: var(--preta);
+}
+
+header {
+  padding: 16px;
 }
 
 header .container {
@@ -23,16 +27,16 @@ header .container {
 }
 
 header .logo {
-  margin-left: 5px;
-  color: var(--vermelho);
-  font-family: 'Arial Black', Times;
-  font-size: 40px;
+  width: 180px;
 }
 
 header nav a {
   text-decoration: none;
   color: #aaa;
-  margin-right: 10px;
+}
+
+header nav a + a {
+  margin-left: 12px;
 }
 
 header nav a:hover {
@@ -43,6 +47,7 @@ header nav a:hover {
 .filme-principal {
   height: 400px;
   font-size: 16px;
+  line-height: 26px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
     url('../img/capa-sherlock.jpg');
   background-size: cover;
@@ -61,6 +66,7 @@ header nav a:hover {
 .filme-principal .titulo {
   margin-top: 15%;
   font-size: 40px;
+  line-height: 50px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
 }
 
@@ -68,6 +74,7 @@ header nav a:hover {
   margin-right: 15px;
   padding: 15px 30px;
   font-size: 12px;
+  line-height: 22px;
   color: #fff;
   border: none;
   border-radius: 12px;
@@ -86,7 +93,7 @@ header nav a:hover {
   margin-right: 8px;
 }
 
-.container {
+main .container {
   margin-left: 20px;
 }
 
@@ -98,4 +105,8 @@ header nav a:hover {
   width: 100%;
   height: 100%;
   display: block;
+}
+
+.carrosel-filmes {
+  margin-top: 5px;
 }
